@@ -1,0 +1,40 @@
+com:
+  epichust:
+    # access 连接地址
+    accessUrl:
+      # 跳动检测接口
+      rstDataTD: C:/1111/在线测量平台数据库样例文件/rstDataTD.mdb;openExclusive=false;ignoreCase=true
+
+      #   ================   在制品pc 数据获取    ==================
+      systemdata: C:\1111\在线测量平台数据库样例文件\在线测量平台数据样例1\sysdata\systemdata.mdb;openExclusive=false;ignoreCase=true
+      userdata : C:\1111\在线测量平台数据库样例文件\在线测量平台数据样例1\userdata\userdata.mdb;openExclusive=false;ignoreCase=true
+    # access 数据库驱动名
+    accessDriverClass: net.ucanaccess.jdbc.UcanaccessDriver
+    # 密码
+    accessPassword:
+      rstDataTD: 12345
+      systemdata: spcsys23
+      userdata: zy700328
+
+    # access 用户名
+    accessUserName:
+      rstDataTD: ''
+      systemdata: ''
+      userdata: ''
+
+  # ======================== orcal配置连接 =============================
+
+    driverClass: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.88.69:1521:orcl
+    passWord: unimax_trgy
+    userName: unimax_trgy
+#
+#
+server:
+  servlet:
+#    ## 访问路径
+    context-path: /utils
+#  # tomcat 服务端口
+  port: 9876
+  tomcat:
+    uri-encoding: UTF-8
